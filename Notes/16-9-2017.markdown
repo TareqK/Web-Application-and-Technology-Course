@@ -1,0 +1,47 @@
+# How the Web Works
+
+- client-server architechture
+
+- Web is considered a distributed software
+
+- The browser is programmed to understand and display HTML files
+
+- You build over the browser when you program for web
+
+- You Build over the Server when you program for web
+
+## Static Websites
+
+- These Websites were more prevalent when the web was young
+
+- Workflow is like this:
+
+  - User requests the content
+
+  - Server retrieves files from harddisk
+
+  - Server sends HTML and other content to browser
+
+  - Browser renders and displays the files
+
+- The webmaster is responsible for upkeep and maintanence
+
+## Dynamic Websites 
+
+- More prevalent now
+
+- The workflow is as follows
+  
+  - User requests content
+  
+  - Server recognises it must run a dynamic script (PHP,JSP,ASP,etc)
+
+  - Server excecutes the script (Using Common Gateway Interface)
+
+  - Script Outputs HTML
+
+  - Server sends the generated HTML and media files to user
+
+  - Browser renders and displays the files.  
+
+
