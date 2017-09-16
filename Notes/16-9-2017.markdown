@@ -1,47 +1,88 @@
 # How the Web Works
 
-- client-server architechture
+- client-server architechture.
 
-- Web is considered a distributed software
+- Web is considered a distributed software.
 
-- The browser is programmed to understand and display HTML files
+- The browser is programmed to understand and display HTML files.
 
-- You build over the browser when you program for web
+- You build over the browser when you program for web.
 
-- You Build over the Server when you program for web
+- You Build over the Server when you program for web.
 
 ## Static Websites
 
-- These Websites were more prevalent when the web was young
+- These Websites were more prevalent when the web was young.
 
-- Workflow is like this:
+- The Workflow is as follows:
 
-  - User requests the content
+  - User requests the content.
 
-  - Server retrieves files from harddisk
+  - Server retrieves files from harddisk.
 
-  - Server sends HTML and other content to browser
+  - Server sends HTML and other content to browser.
 
-  - Browser renders and displays the files
+  - Browser renders and displays the files.
 
-- The webmaster is responsible for upkeep and maintanence
+- The webmaster is responsible for upkeep and maintanence.
 
 ## Dynamic Websites 
 
-- More prevalent now
+- More prevalent now.
 
-- The workflow is as follows
+- The Workflow is as follows:
   
-  - User requests content
+  - User requests content.
   
-  - Server recognises it must run a dynamic script (PHP,JSP,ASP,etc)
+  - Server recognises it must run a dynamic script (PHP,JSP,ASP,etc).
 
-  - Server excecutes the script (Using Common Gateway Interface)
+  - Server excecutes the script (Using Common Gateway Interface).
 
-  - Script Outputs HTML
+  - Script Outputs HTML.
 
-  - Server sends the generated HTML and media files to user
+  - Server sends the generated HTML and media files to user.
 
   - Browser renders and displays the files.  
+
+- Pages change as inputs change.
+
+## Web 2.0 and Beyond
+
+- Its not a new technology, its a new requirment for web applications to 
+give a richer experience. 
+
+- In Web 2.0, web page creation is distributed between clients and servers. This
+creates a more interactive web experience such as social media websites.
+
+## IPV4 vs IPV6
+Any device on the internet has a unique IP address. There are 2 
+IP protocols in use. 
+
+- IPV4 :
+
+  - Older and being phased out
+
+  - 4 8 bit components
+
+  - 2^32 addresses possible
+
+  - almost full
+
+- IPV6 :
+
+ - Newer, current protocol
+
+ - 8 16 bit components
+
+ - 2^128 addresses possible
+
+ - Will probably never full up
+
+## Where is the Internet?
+
+- Nobody actually owns the internet
+
+- It doesnt really exist in one physical location
+
 
 
