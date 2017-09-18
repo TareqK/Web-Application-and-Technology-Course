@@ -2,7 +2,7 @@
 
 ## How the Web Works
 
-- client-server architechture.
+- client-server architecture.
 
 - Web is considered a distributed software.
 
@@ -20,13 +20,13 @@
 
   - User requests the content.
 
-  - Server retrieves files from harddisk.
+  - Server retrieves files from hard disk.
 
   - Server sends HTML and other content to browser.
 
   - Browser renders and displays the files.
 
-- The webmaster is responsible for upkeep and maintanence.
+- The webmaster is responsible for upkeep and maintenance.
 
 ### Dynamic Websites 
 
@@ -36,9 +36,9 @@
   
   - User requests content.
   
-  - Server recognises it must run a dynamic script (PHP,JSP,ASP,etc).
+  - Server recognizes it must run a dynamic script (PHP,JSP,ASP,etc).
 
-  - Server excecutes the script (Using Common Gateway Interface).
+  - Server executes the script (Using Common Gateway Interface).
 
   - Script Outputs HTML.
 
@@ -50,7 +50,7 @@
 
 ### Web 2.0 and Beyond
 
-- Its not a new technology, its a new requirment for web applications to 
+- Its not a new technology, its a new requirement for web applications to 
 give a richer experience. 
 
 - In Web 2.0, web page creation is distributed between clients and servers. This
@@ -58,17 +58,17 @@ creates a more interactive web experience such as social media websites.
 
 ## Where is the Internet?
 
-- Nobody actually owns the internet
+- Nobody actually owns the Internet
 
-- It doesnt really exist in one physical location
+- It doesn't really exist in one physical location
 
-In reality, nobody actually "owns" the internet, but many organisations 
+In reality, nobody actually "owns" the Internet, but many organizations 
 and companies are part of managing it. For example, ISP's Manage the
-Infrastucture , Companies produce hardware that lets us access it, Organisations
+Infrastructure , Companies produce hardware that lets us access it, Organizations
 like ICANN and W3F manage it, etc. Its a group of overseers that agree on 
 using something. 
 
-But the internet is a real, physical thing, its just very distributed. 
+But the Internet is a real, physical thing, its just very distributed. 
 
 ### IPV4 vs IPV6
 Any device on the internet has a unique IP address. There are 2 
@@ -96,7 +96,7 @@ IP protocols in use.
  
 ### Internet Exchange Points
 
-- Allow ISP's to peer (interconnect) with eachother in a shared facility ,
+- Allow ISP's to peer (interconnect) with each other in a shared facility ,
 improving performance for each partner in the peer relationship.
 
 - to buy a domain on a certain IXP, we contact one of these partners
@@ -113,7 +113,7 @@ IP address of a domain is. If it is not cached on the DNS, it is cached.
 
 - Domain names are tied to an IP address.
 
-- Convinient in case we want to move our hosting, since the Domain Name is *mapped* to the 
+- Convenient in case we want to move our hosting, since the Domain Name is *mapped* to the 
 new IP
 
 #### Domain Names
@@ -140,7 +140,7 @@ is a hosting server. After that, we connect our Domain name to our domain.
 Now, When someone enters www.ourwebsite.com, the DNS server points them 
 to our website.
 
-- Where you host is entierly up to you. You can host your website at a hosting
+- Where you host is entirely up to you. You can host your website at a hosting
 company or host it on your own servers(so as long as the IP address is static).
 
 - If you do change the hosting server or the IP address, people can still
@@ -152,20 +152,29 @@ find you by your domain name since it always points to you.
 
 - The Domain Name is sent to the DNS server.
 
-- The DNS server resolves the Domain Name(finds the IP and returns it to the user)
+- The DNS server resolves the Domain Name(finds the IP and returns it to the user).
   
-  - If the DNS server does not have the IP address, it goes and looks for them at an IXP and caches it
+  - If the DNS server does not have the IP address, it goes and looks for them at an IXP and caches it.
 
-- The Browser requests the resource at the IP address returned by the DNS server
+- The Browser requests the resource at the IP address returned by the DNS server.
 
-## URL's 
 
-- Used to allow clients to request a resource from a server
+### URL's 
 
-has the following structure
+- Used to allow clients to request a resource from a server.
+
+- has the following structure :
 
 ```HTML
+
 protocol://domainname/path?querystring#fragment
 
 ```
+### Web Hosting
+
+- A webhost is made up of a webserver and any supporting programs(mail,ftp,database,etc).
+
+- Many domains can point to one host. 
+
+- Many websites can be hosted on one host. This is usually done by **port forwarding** or **virtual machines**.
 
