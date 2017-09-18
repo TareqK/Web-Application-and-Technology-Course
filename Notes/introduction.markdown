@@ -12,7 +12,7 @@
 
 - You Build over the Server when you program for web.
 
-## Static Websites
+### Static Websites
 
 - These Websites were more prevalent when the web was young.
 
@@ -28,7 +28,7 @@
 
 - The webmaster is responsible for upkeep and maintanence.
 
-## Dynamic Websites 
+### Dynamic Websites 
 
 - More prevalent now.
 
@@ -48,7 +48,7 @@
 
 - Pages change as inputs change.
 
-## Web 2.0 and Beyond
+### Web 2.0 and Beyond
 
 - Its not a new technology, its a new requirment for web applications to 
 give a richer experience. 
@@ -56,7 +56,21 @@ give a richer experience.
 - In Web 2.0, web page creation is distributed between clients and servers. This
 creates a more interactive web experience such as social media websites.
 
-## IPV4 vs IPV6
+## Where is the Internet?
+
+- Nobody actually owns the internet
+
+- It doesnt really exist in one physical location
+
+In reality, nobody actually "owns" the internet, but many organisations 
+and companies are part of managing it. For example, ISP's Manage the
+Infrastucture , Companies produce hardware that lets us access it, Organisations
+like ICANN and W3F manage it, etc. Its a group of overseers that agree on 
+using something. 
+
+But the internet is a real, physical thing, its just very distributed. 
+
+### IPV4 vs IPV6
 Any device on the internet has a unique IP address. There are 2 
 IP protocols in use. 
 
@@ -79,22 +93,27 @@ IP protocols in use.
  - 2^128 addresses possible
 
  - Will probably never full up
+ 
+## Internet Exchange Points
 
-## Where is the Internet?
+- Allow ISP's to peer (interconnect) with eachother in a shared facility ,
+improving performance for each partner in the peer relationship.
 
-- Nobody actually owns the internet
+- to buy a domain on a certain IXP, we contact one of these partners
+and reserve it. The request is sent to the IXP to see if it is taken or not.
+If it is not taken, then you can assign it. Every region(or country usually) 
+has an IXP.
 
-- It doesnt really exist in one physical location
+- When we want a server, the DNS server asks the IXP if it knows what is the 
+IP address of a domain is. If it is not cached on the DNS, it is cached.
+ 
+### Domain Name System
 
-In reality, nobody actually "owns" the internet, but many organisations 
-and companies are part of managing it. For example, ISP's Manage the
-Infrastucture , Companies produce hardware that lets us access it, Organisations
-like ICANN and W3F manage it, etc. Its a group of overseers that agree on 
-using something. 
+- We need it because we dont want to memorize IP addresses.
 
-But the internet is a real, physical thing, its just very distributed. 
+- Domain names are tied to an IP address.
 
-## Domain Names
+#### Domain Names
 
 - Makes it easier to memorize website names
 
@@ -111,20 +130,7 @@ to the name and dials it.
 
   - The DNS server returns the IP address.
 
-## Internet Exchange Points
-
-- Allow ISP's to peer (interconnect) with eachother in a shared facility ,
-improving performance for each partner in the peer relationship.
-
-- to buy a domain on a certain IXP, we contact one of these partners
-and reserve it. The request is sent to the IXP to see if it is taken or not.
-If it is not taken, then you can assign it. Every region(or country usually) 
-has an IXP.
-
-- When we want a server, the DNS server asks the IXP if it knows what is the 
-IP address of a domain is. If it is not cached on the DNS, it is cached.
-  
-## Domain Hosting 
+### Domain Hosting 
 
 - After Buying a domain, We have to host a website somewhere. This somewhere
 is a hosting server. After that, we connect our Domain name to our domain. 
@@ -137,6 +143,6 @@ company or host it on your own servers(so as long as the IP address is static).
 - If you do change the hosting server or the IP address, people can still
 find you by your domain name since it always points to you.
 
-## Domain Name System
+
 
 
