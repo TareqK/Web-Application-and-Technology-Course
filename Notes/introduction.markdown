@@ -94,7 +94,7 @@ IP protocols in use.
 
  - Will probably never full up
  
-## Internet Exchange Points
+### Internet Exchange Points
 
 - Allow ISP's to peer (interconnect) with eachother in a shared facility ,
 improving performance for each partner in the peer relationship.
@@ -113,6 +113,9 @@ IP address of a domain is. If it is not cached on the DNS, it is cached.
 
 - Domain names are tied to an IP address.
 
+- Convinient in case we want to move our hosting, since the Domain Name is *mapped* to the 
+new IP
+
 #### Domain Names
 
 - Makes it easier to memorize website names
@@ -130,7 +133,7 @@ to the name and dials it.
 
   - The DNS server returns the IP address.
 
-### Domain Hosting 
+#### Domain Hosting 
 
 - After Buying a domain, We have to host a website somewhere. This somewhere
 is a hosting server. After that, we connect our Domain name to our domain. 
@@ -143,6 +146,26 @@ company or host it on your own servers(so as long as the IP address is static).
 - If you do change the hosting server or the IP address, people can still
 find you by your domain name since it always points to you.
 
+#### DNS Overview
 
+- User enters the name.
 
+- The Domain Name is sent to the DNS server.
+
+- The DNS server resolves the Domain Name(finds the IP and returns it to the user)
+  
+  - If the DNS server does not have the IP address, it goes and looks for them at an IXP and caches it
+
+- The Browser requests the resource at the IP address returned by the DNS server
+
+## URL's 
+
+- Used to allow clients to request a resource from a server
+
+has the following structure
+
+```HTML
+protocol://domainname/path?querystring#fragment
+
+```
 
