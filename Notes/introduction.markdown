@@ -2,13 +2,14 @@
 
 ## What is the Web?
 
-- Set of protocols to connect many computers together.
+- It is many computers connected together.
 	
 - Has [a long history](https://webfoundation.org/about/vision/history-of-the-web/)
 
 - Has many applications.
 
 - One if these is the **Internet**.
+
 ## How the Web Works
 
 - client-server architecture.
