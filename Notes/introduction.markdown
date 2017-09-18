@@ -1,4 +1,6 @@
-# How the Web Works
+# Introduction 
+
+## How the Web Works
 
 - client-server architechture.
 
@@ -134,4 +136,7 @@ company or host it on your own servers(so as long as the IP address is static).
 
 - If you do change the hosting server or the IP address, people can still
 find you by your domain name since it always points to you.
+
+## Domain Name System
+
 
