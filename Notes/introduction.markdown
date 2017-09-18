@@ -1,5 +1,14 @@
 # Introduction 
 
+## What is the Web?
+
+- Set of protocols to connect many computers together.
+	
+- Has [a long history](https://webfoundation.org/about/vision/history-of-the-web/)
+
+- Has many applications.
+
+- One if these is the **Internet**.
 ## How the Web Works
 
 - client-server architecture.
@@ -176,5 +185,5 @@ protocol://domainname/path?querystring#fragment
 
 - Many domains can point to one host. 
 
-- Many websites can be hosted on one host. This is usually done by **port forwarding** or **virtual machines**.
+- Many websites can be hosted on one host. This is usually done by **port forwarding** or **virtual machines**.git 
 
