@@ -180,6 +180,18 @@ find you by your domain name since it always points to you.
 protocol://domainname/path?querystring#fragment
 
 ```
+  - The protocol determines what the webserver will make of our request.
+
+  - The Domain Name points to the server.
+
+  - The Path points to where a resource is to the server.
+
+  - The Query string is used to pass queries(similar to command line arguments in C or java).
+
+  - The Fragment refers to an element in the retrieved resource, and it's processing is usually done on the client side 
+	eg.https://en.wikipedia.org/wiki/Fragment_identifier#Examples will open wikipedia on the Fragment Identifier article,
+	and will scroll down automatically to the Examples section of the page.
+  
 ### Web Hosting
 
 - A webhost is made up of a webserver and any supporting programs(mail,ftp,database,etc).
