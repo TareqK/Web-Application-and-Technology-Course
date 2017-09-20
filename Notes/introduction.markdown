@@ -209,13 +209,15 @@ programs to "wake them up".
 
 ## HTTP
 
-HTTP stands for **H*yper **T**ext **T**ransfer **P**rotocol. 
+HTTP stands for **H*yper **T**ext **T**ransfer **P**rotocol. It is a **Stateless** protocol ie,
+it does not "remember". As soon as the response is sent, the connection closes to free up resources.
+HTTP forms the backbone of the Internet. 
 
 ### Basic Work Flow
 
-- The HTTP protocol establishes a TCP connection on  **port 80** on the server(not necessarily 80 on the client).
+- The HTTP protocol establishes a TCP connection on **port 80**(Usually) on the server(not necessarily 80 on the client).
 
-  - Usually on port 80. We can change this as a server administrator, but either every request has to 
+  - We can change the port as a server administrator, but either every request has to 
 	have the port added to it as (www.domain.com:port), or we set up
 	[port forwarding](https://en.wikipedia.org/wiki/Port_forwarding).
 
@@ -237,6 +239,85 @@ HTTP stands for **H*yper **T**ext **T**ransfer **P**rotocol.
 
 - PUT : Modifies or adds a certain resource. 
 
+An Example HTTP request is:
 
+```HTTP
 
+GET /index.html HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0(Windows RT; WOW64; rv:15) Gecko/123123123 Firefox/15.0.1
+Accept: text/html,application/xhtml+xml
+Accept-Language: en-us , en;q=0.5
+Accept-Encoding: gzip,deflate
+Connection: keep-alive
+Cache-Control: max-age=0
 
+```
+
+This is a break down of some important variables:
+
+### Keep-Alive
+
+in HTTP, keep-alive is basically keeping the same connection to the server up(for a certain time period) and 
+reusing it instead of opening a new connection for every request/response pair.Once the client sees that it no longer needs the connection
+(all the resources needed are obtained), it closes the connection.
+
+#### Advantages of Keep-Alive
+
+- Lower CPU and memory usage (because fewer connections are open simultaneously).
+
+- Enables HTTP pipelining of requests and responses.
+
+- Reduced network congestion (fewer TCP connections).
+
+- Reduced latency in subsequent requests (no handshaking).
+
+- Errors can be reported without the penalty of closing the TCP connection.
+ 
+#### Disadvantages of Keep-Alive
+
+- If the client does not close the connection when all of the data it needs has been received,
+ then the resources needed to keep the connection open on the server will be unavailable for other clients.
+ 
+### Media Internet Type
+
+In HTTP, Media Internet Type specifies what the data being transfered should be. It tells the 
+application to use to handle the request. 
+
+### User Agent 
+
+In HTTP, the User Agent is the application who made this request. Its usually the application, OS, and version of the 
+application that made that request.
+
+### Cache-Control
+
+Determines if the page will be cached or not, and how much it will stay cached.
+
+An Example HTTP response is
+
+```HTTP
+
+HTTP/1.1 200 OK
+Server : Apache
+Content-Length : 1111
+Content-Encoding : gzip
+Connection : close
+Content-Type: text/html,charset=UTF-8
+
+<html>
+<head>
+............
+
+```
+### Response code
+
+Tells us if the response is OK or not, and what went wrong
+
+### Server 
+
+Tells us what kind of server issued this response
+
+### Content Type:
+
+Tells us how to deal with the response, and what the encoding is. This is
+especially important if we are using languages other than english.
