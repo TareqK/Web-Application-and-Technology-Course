@@ -239,7 +239,9 @@ HTTP forms the backbone of the Internet.
 
 - PUT : Modifies or adds a certain resource. 
 
-An Example HTTP request is:
+## HTTP request Structure
+
+An example HTTP request is :
 
 ```HTTP
 
@@ -292,6 +294,8 @@ application that made that request.
 ### Cache-Control
 
 Determines if the page will be cached or not, and how much it will stay cached.
+
+## HTTP Response Structure :
 
 An Example HTTP response is
 
