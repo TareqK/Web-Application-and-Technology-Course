@@ -166,7 +166,7 @@ find you by your domain name since it always points to you.
   
   - If the DNS server does not have the IP address, it goes and looks for them at an IXP and caches it.
 
-- The Browser requests the resource at the IP address returned by the DNS server.
+- The Browser requests the resource at the IP address returned by the DNS server(ie, creates an HTTP request for it).
 
 
 ### URL's 
@@ -180,24 +180,63 @@ find you by your domain name since it always points to you.
 protocol://domainname/path?querystring#fragment
 
 ```
-  - The protocol determines how the webserver will deal with our request and what it will return to us. for example,
+- The protocol determines how the webserver will deal with our request and what it will return to us. for example,
 	HTTP will return an HTML page, FTP will return a file, RTSP will return a stream, etc.
 
-  - The Domain Name points to the server.
+- The Domain Name points to the server.
 
-  - The Path points to where a resource is to the server.
+- The Path points to where a resource is to the server.
 
-  - The Query string is used to pass queries(similar to command line arguments in C or java).
+- The Query string is used to pass queries(similar to command line arguments in C or java).
 
-  - The Fragment refers to an element in the retrieved resource, and it's processing is usually done on the client side 
+- The Fragment refers to an element in the retrieved resource, and it's processing is usually done on the client side 
 	eg https://en.wikipedia.org/wiki/Fragment_identifier#Examples will open wikipedia on the Fragment Identifier article,
 	and will scroll down automatically to the Examples section of the page.
   
 ### Web Hosting
 
-- A webhost is made up of a webserver and any supporting programs(mail,ftp,database,etc).
+- A webhost is made up of a webserver and any supporting programs(mail, ftp, database, CGI, etc).
 
 - Many domains can point to one host. 
 
-- Many websites can be hosted on one host. This is usually done by **port forwarding** or **virtual machines**.git 
+- Many websites can be hosted on one host. This is usually done by **port forwarding** or **virtual machines**. 
+
+## Ports
+
+Ports allow us to communicate with many programs on one Internet connection. They are Ethernet
+channels that Internet programs listen to and get/send data from/to. Ports generate events for 
+programs to "wake them up".
+
+## HTTP
+
+HTTP stands for **H*yper **T**ext **T**ransfer **P**rotocol. 
+
+### Basic Work Flow
+
+- The HTTP protocol establishes a TCP connection on  **port 80** on the server(not necessarily 80 on the client).
+
+  - Usually on port 80. We can change this as a server administrator, but either every request has to 
+	have the port added to it as (www.domain.com:port), or we set up
+	[port forwarding](https://en.wikipedia.org/wiki/Port_forwarding).
+
+- The Server waits for the request.
+
+- The Client sends the request.
+
+- The Server then responds with a response code, headers, and an optional message(which can also be files).
+
+- After the HTTP response is received, the browser(or the application) is responsible for processing and displaying it.
+
+### HTTP Request types
+
+- GET : Fetches a resource.
+
+- POST : Sends a message or resource.
+
+- DELETE : Deletes a certain resource.
+
+- PUT : Modifies or adds a certain resource. 
+
+
+
 
