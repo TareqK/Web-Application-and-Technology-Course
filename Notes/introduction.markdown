@@ -209,7 +209,7 @@ programs to "wake them up".
 
 ## HTTP
 
-HTTP stands for **H*yper **T**ext **T**ransfer **P**rotocol. It is a **Stateless** protocol ie,
+HTTP stands for **H**yper **T**ext **T**ransfer **P**rotocol. It is a **Stateless** protocol ie,
 it does not "remember". As soon as the response is sent, the connection closes to free up resources.
 HTTP forms the backbone of the Internet. 
 
