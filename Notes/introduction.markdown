@@ -239,7 +239,7 @@ HTTP forms the backbone of the Internet.
 
 - PUT : Modifies or adds a certain resource. 
 
-## HTTP request Structure
+### HTTP request Structure
 
 An example HTTP request is :
 
@@ -262,7 +262,7 @@ This is a break down of some important variables:
 reusing it instead of opening a new connection for every request/response pair.Once the client sees that it no longer needs the connection
 (all the resources needed are obtained), it closes the connection.
 
-  - Advantages of Keep-Alive
+  - Advantages of Keep-Alive :
 
     - Lower CPU and memory usage (because fewer connections are open simultaneously).
 
@@ -274,12 +274,12 @@ reusing it instead of opening a new connection for every request/response pair.O
 
 	- Errors can be reported without the penalty of closing the TCP connection.
  
-  - Disadvantages of Keep-Alive
+  - Disadvantages of Keep-Alive :
 
 	- If the client does not close the connection when all of the data it needs has been received,
 	  then the resources needed to keep the connection open on the server will be unavailable for other clients.
  
-- Media Internet Type :In HTTP, Media Internet Type specifies what the data being transfered should be. It tells the 
+- Media Internet Type : In HTTP, Media Internet Type specifies what the data being transfered should be. It tells the 
 application to use to handle the request. 
 
 - User Agent : In HTTP, the User Agent is the application who made this request. Its usually the application, OS, and version of the 
@@ -287,7 +287,7 @@ application that made that request.
 
 - Cache-Control : Determines if the page will be cached or not, and how much it will stay cached.
 
-## HTTP Response Structure :
+### HTTP Response Structure :
 
 An Example HTTP response is
 
