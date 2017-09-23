@@ -47,20 +47,23 @@ are **completely** seperated. New sets of tags were added as well, as was animat
 ### Elements and Attributes
 
 HTML **documents** are made up of a set of **elements** and **attributes**.
-Every element has an **opening tag** and a **closing tag**. Every 
-element has attributes.
+Every element has an **opening tag** and a **closing tag**. Elements have 
+attributes.
 
 eg : 
 
 ```HTML 
 <a href="http://mylink.com">My Link</a>
-```
-breaking it down :
 
-- <a : the element. this indicates an active link
+```
+breaking this line down :
+
+- <a : The element. ```<a```  indicates an that this is an active link.
 
 - href="http://mylink.com" : The attribute. It tells the element from where
-to fetch something
+to fetch something. Not all elements have attributes, such as the
+```<br>``` tag, but all attributes belong to an element. Tags without 
+attributes or content are known as empty tags. they use a shorthand notation.
 
 - My Link : The content. This is what is displayed to the user.
  
