@@ -81,19 +81,51 @@ attributes or content are known as empty tags. they use a shorthand notation.
 #### Empty Elements
 Elements such as ```<br />``` take no attributes, 
 and are called empty elements. These elements can be closed
-using the shortahand notation ```/>``` instead of the normal
+using the shorthand notation ```/>``` instead of the normal
 syntax.
 
-#### Nested Elements
+#### Nested Elements and Document Structure
 It Is Possible to nest elements in HTML, however, it is very
 important to mind which tags close first and which tags contain
 which. It makes no sense, for example, to have the ```<head>```
 tag nested in the ```<body>``` tag, or to close the ```<head>```
-tag after the ```<body>``` tag in an HTML file. This is the 
-heirarchy of HTML elements:
+tag after the ```<body>``` tag in an HTML file. Its always
+important to know which elements are parents of which elements
+and closing them in the right order. This is the 
+hierarchy of HTML elements:
 
-[Heirarchy of HTML elements](http://www.westciv.com/style_master/hands_on_tutorial_sm/images/containment_hierarchy.png)
+![Heirarchy of HTML elements](http://www.westciv.com/style_master/hands_on_tutorial_sm/images/containment_hierarchy.png)
 
-##### Attribute Inheritance 
+HTML documents have a Tree structure, with its root being 
+the ```<html>``` tag. The ```head``` section contains the 
+**metadata**, which are invisible parameters that tell us more about 
+the document. 
+#### Attribute Inheritance 
 
-Some child attributes will take attributes from their parents
+Some child attributes will inherit certain attributes from their parents, such
+as font size, position, and color.
+
+#### Escape Characters
+
+Sometimes, we want to display a character like ```>``` to the
+user. For this, we use the ```&``` symbol before it, like this
+```&>```, to display it.
+
+#### Example HTML Document 
+
+```HTML
+
+<!DOCTYPE html>
+<html>
+<head lang = "en">//The Langage
+	<meta charset="utf-8">//The Charset we are using
+	<title>my title</title>//Our Title
+	<link rel="stylesheet" href="css/main.css">//Setting the styling or the alternative documents
+	<script src="js/myscript.js"></script>//Calling a script
+	</head>
+<body>
+	<h1>this is a simple document with not much content</h1>
+	....
+</body>
+</html>
+```
