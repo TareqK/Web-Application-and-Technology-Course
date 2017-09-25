@@ -79,10 +79,9 @@ attributes or content are known as empty tags. they use a shorthand notation.
 - ```</a>``` : The Closing tag for this element.
 
 #### Empty Elements
-Elements such as ```<br />``` take no attributes, 
-and are called empty elements. These elements can be closed
-using the shorthand notation ```/>``` instead of the normal
-syntax.
+Elements such as ```<br />``` are called empty tags. They don't have 
+any content. These elements can be closed using the shorthand notation 
+```/>``` instead of the normal syntax.
 
 #### Nested Elements and Document Structure
 It Is Possible to nest elements in HTML, however, it is very
@@ -105,26 +104,37 @@ the document.
 Some child attributes will inherit certain attributes from their parents, such
 as font size, position, and color.
 
-#### Escape Characters
+### Escape Characters
 
 Sometimes, we want to display a character like ```>``` to the
 user. For this, we use the ```&``` symbol before it, like this
 ```&>```, to display it.
 
-#### Example HTML Document 
+### Relative and Absolute paths
+
+Sometimes in HTML, we want to fetch a source from the same server. In that
+case, we can use a **relative** path, which is the URL of the 
+resource minus the current URL. If we want to fetch something from another server, we use
+the **absolute** pat to the resource, which is the URL of the 
+resource.
+
+### Example HTML Document Source
 
 ```HTML
 
 <!DOCTYPE html>
 <html>
-<head lang = "en">//The Langage
-	<meta charset="utf-8">//The Charset we are using
-	<title>my title</title>//Our Title
-	<link rel="stylesheet" href="css/main.css">//Setting the styling or the alternative documents
-	<script src="js/myscript.js"></script>//Calling a script
+<head lang = "en"><!-- The Langage -->
+	<meta charset="utf-8"><!-- The Charset we are using -->
+	<title>my title</title><!-- Our Title -->
+	<link rel="stylesheet" href="css/main.css" /><!-- Setting the styling or the alternative documents -->
+	<link type="text/javascript" href="js/myscript.js" /><!-- Calling a script -->
+	</meta>
 	</head>
 <body>
 	<h1>this is a simple document with not much content</h1>
+	<p>This is a photo</p>
+	<img src="images/sample.png" alt="my image" /><!-- Inserting an Image in a paragraph -->
 	....
 </body>
 </html>
