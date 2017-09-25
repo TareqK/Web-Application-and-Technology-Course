@@ -92,4 +92,8 @@ tag nested in the ```<body>``` tag, or to close the ```<head>```
 tag after the ```<body>``` tag in an HTML file. This is the 
 heirarchy of HTML elements:
 
-[Heirarchy of HTML elements](http://www.webreference.com/html/rendering/flowChart2.gif)
+[Heirarchy of HTML elements](http://www.westciv.com/style_master/hands_on_tutorial_sm/images/containment_hierarchy.png)
+
+##### Attribute Inheritance 
+
+Some child attributes will take attributes from their parents
