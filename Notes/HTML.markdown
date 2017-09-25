@@ -115,7 +115,7 @@ user. For this, we use the ```&``` symbol before it, like this
 Sometimes in HTML, we want to fetch a source from the same server. In that
 case, we can use a **relative** path, which is the URL of the 
 resource minus the current URL. If we want to fetch something from another server, we use
-the **absolute** pat to the resource, which is the URL of the 
+the **absolute** path to the resource, which is the URL of the 
 resource.
 
 ### Example HTML Document Source
@@ -134,7 +134,7 @@ resource.
 <body>
 	<h1>this is a simple document with not much content</h1>
 	<p>This is a photo</p>
-	<img src="images/sample.png" alt="my image" /><!-- Inserting an Image in a paragraph -->
+	<img src="images/sample.png" alt="my image" /><!-- Inserting an Image in a paragraph using its relative path -->
 	....
 </body>
 </html>
