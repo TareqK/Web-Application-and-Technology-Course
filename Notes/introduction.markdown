@@ -96,13 +96,13 @@ IP protocols in use.
 
 - IPV6 :
 
- - Newer, current protocol
+  - Newer, current protocol
 
- - 8 16 bit components
+  - 8 16 bit components
 
- - 2^128 addresses possible
+  - 2^128 addresses possible
 
- - Will probably never full up
+  - Will probably never full up
  
 ### Internet Exchange Points
 
@@ -135,7 +135,7 @@ to the name and dials it.
 
 - This is done on a Domain Name Server(DNS)
 
-- The Workflow is as follows:
+- The Workflow is as follows :
   
   - The browser sends the domain name we enter to the DNS server.
 
