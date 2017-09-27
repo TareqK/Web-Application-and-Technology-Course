@@ -157,8 +157,9 @@ resource.
 	<h1>This is a simple document with not much content</h1>
 	<h2>This header is smaller</h2>
 	<p>This is a photo</p>
-	<img src="images/sample.png" alt="my image" /><!-- Inserting an Image in a paragraph using its relative path -->
-	<a href="www.google.com">This is a simple active link</a>
+	<img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="my image" /><!-- Inserting an Image in a paragraph using its absolute path -->
+	<br />
+	<a href="http://www.google.com">This is a simple active link</a>
 	<ul>
 		<li>This</li>
 		<li>Is An</li>
@@ -181,8 +182,7 @@ resource.
 	</dl>
 	<hr />
 	<ul>
-		<li>And This</li>
-		<li>
+		<li>And This
 			<ol>
 				<li>Is a List in a List!</li>
 			</ol>
