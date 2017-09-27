@@ -99,6 +99,9 @@ HTML documents have a Tree structure, with its root being
 the ```<html>``` tag. The ```head``` section contains the 
 **metadata**, which are invisible parameters that tell us more about 
 the document. 
+#### Common HTML Tags
+Tag Name | Symbol | Use
+Header | h | Used for structuing the doccument
 #### Attribute Inheritance 
 
 Some child attributes will inherit certain attributes from their parents, such
@@ -117,6 +120,8 @@ case, we can use a **relative** path, which is the URL of the
 resource minus the current URL. If we want to fetch something from another server, we use
 the **absolute** path to the resource, which is the URL of the 
 resource.
+
+
 
 ### Example HTML Document Source
 
