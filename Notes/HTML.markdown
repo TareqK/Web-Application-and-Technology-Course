@@ -101,7 +101,10 @@ the ```<html>``` tag. The ```head``` section contains the
 the document. 
 #### Common HTML Tags
 Tag Name | Symbol | Use
-Header | h | Used for structuing the doccument
+Heading | ```<h1>....</h1>``` | Structuing the doccument(titles,subtitles,etc).
+
+
+
 #### Attribute Inheritance 
 
 Some child attributes will inherit certain attributes from their parents, such
