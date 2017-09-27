@@ -109,6 +109,9 @@ Paragraph | ```<p>```
 Break Line | ```<br />``` 
 Horizontal Bar | ```<hr />``` 
 Unordered List | ```<ul>``` 
+Defenition List | ```<dl>```
+Defenition Term | ```<dt>```
+Defenition Description | ```<dd>```
 Ordered List | ```<ol>```
 List Item | ```<li>``` 
 Figure | ```<figure>```  
@@ -162,12 +165,29 @@ resource.
 		<li>Unordered List</li>
 	</ul>
 	
+	<hr />
 	<ol>
+	
 		<li>And This</li>
 		<li>Is An</li>
 		<li>Ordered List</li>
 	</ol>
-	....
+	
+	<hr />
+	
+	<dl>
+		<dt>This</dt>
+		<dd>Is A Defenition List</dd>
+	</dl>
+	<hr />
+	<ul>
+		<li>And This</li>
+		<li>
+			<ol>
+				<li>Is a List in a List!</li>
+			</ol>
+		</li>
+	</ul>
 </body>
 </html>
 ```
