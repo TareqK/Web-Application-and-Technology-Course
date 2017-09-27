@@ -48,9 +48,7 @@ are **completely** seperated. New sets of tags were added as well, as was animat
 
 HTML **documents** are made up of a set of **elements** and **attributes**.
 Every element has an **opening tag** and a **closing tag**. Elements have 
-attributes. We will be discussing general concepts in HTML. For a 
-complete list of elements and attributes and how they are used,
-[click here](http://www.simplehtmlguide.com/cheatsheet.php).
+attributes. This is their general syntax .
 
 
 ```HTML
@@ -93,12 +91,18 @@ important to know which elements are parents of which elements
 and closing them in the right order. This is the 
 hierarchy of HTML elements:
 
+
+
 ![Heirarchy of HTML elements](http://www.westciv.com/style_master/hands_on_tutorial_sm/images/containment_hierarchy.png)
 
 HTML documents have a Tree structure, with its root being 
 the ```<html>``` tag. The ```head``` section contains the 
 **metadata**, which are invisible parameters that tell us more about 
 the document. 
+
+#### Attribute Inheritance 
+Some child attributes will inherit certain attributes from their parents, such
+as font size, position, and color.
 
 #### Some Common HTML Tags
 
@@ -109,9 +113,9 @@ Paragraph | ```<p>```
 Break Line | ```<br />``` 
 Horizontal Bar | ```<hr />``` 
 Unordered List | ```<ul>``` 
-Defenition List | ```<dl>```
-Defenition Term | ```<dt>```
-Defenition Description | ```<dd>```
+Definition List | ```<dl>```
+Definition Term | ```<dt>```
+Definition Description | ```<dd>```
 Ordered List | ```<ol>```
 List Item | ```<li>``` 
 Figure | ```<figure>```  
@@ -119,26 +123,31 @@ Image | ```<img>```
 Link | ```<link>``` 
 Active Link | ```<a>``` 
 
-#### Attribute Inheritance 
+For a more complete list of elements and attributes and how they are used,
+[click here](http://www.simplehtmlguide.com/cheatsheet.php).
 
-Some child attributes will inherit certain attributes from their parents, such
-as font size, position, and color.
 
 ### Escape Characters
 
-Sometimes, we want to display a character like ```>``` to the
+Sometimes, we want to display a special character like ```>``` to the
 user. For this, we use the ```&``` symbol before it, like this
 ```&>```, to display it.
 
 ### Relative and Absolute paths
 
-Sometimes in HTML, we want to fetch a source from the same server. In that
-case, we can use a **relative** path, which is the URL of the 
-resource minus the current URL. If we want to fetch something from another server, we use
-the **absolute** path to the resource, which is the URL of the 
-resource.
+Sometimes in HTML, we want to fetch a certain resource from our
+own server. There are 
+2 ways we can do this. We can use a **relative** path, which is the URL of the 
+resource minus the current URL(ie, where the resource is relative to the
+current file). The other way is using the **absolute** path to the resource,
+which is the complete URL of the resource.
 
+It is always preferable to use relative paths when writing HTML documents,
+because if we do ever move the HTML files, we wont have to re-write all
+the links in them.
 
+However, if we do want to fetch a resource from another server, we 
+can only use its absolute path. 
 
 ### Example HTML Document Source
 
@@ -146,7 +155,7 @@ resource.
 
 <!DOCTYPE html>
 <html>
-<head lang = "en"><!-- The Langage -->
+<head lang = "en"><!-- The Language of the webpage -->
 	<meta charset="utf-8"><!-- The Charset we are using -->
 	<title>my title</title><!-- Our Title -->
 	<link rel="stylesheet" href="css/main.css" /><!-- Setting the styling or the alternative documents -->
@@ -162,23 +171,20 @@ resource.
 	<a href="http://www.google.com">This is a simple active link</a>
 	<ul>
 		<li>This</li>
-		<li>Is An</li>
+		<li>Is an</li>
 		<li>Unordered List</li>
 	</ul>
-	
 	<hr />
 	<ol>
 	
 		<li>And This</li>
-		<li>Is An</li>
+		<li>Is an</li>
 		<li>Ordered List</li>
 	</ol>
-	
 	<hr />
-	
 	<dl>
 		<dt>This</dt>
-		<dd>Is A Defenition List</dd>
+		<dd>Is a Definition List</dd>
 	</dl>
 	<hr />
 	<ul>
