@@ -99,11 +99,22 @@ HTML documents have a Tree structure, with its root being
 the ```<html>``` tag. The ```head``` section contains the 
 **metadata**, which are invisible parameters that tell us more about 
 the document. 
-#### Common HTML Tags
-Tag Name | Symbol | Use
-Heading | ```<h1>....</h1>``` | Structuing the doccument(titles,subtitles,etc).
 
+#### Some Common HTML Tags
 
+Tag Name | Symbol 
+--- | ---
+Heading | ```<h1>```  
+Paragraph | ```<p>``` 
+Break Line | ```<br />``` 
+Horizontal Bar | ```<hr />``` 
+Unordered List | ```<ul>``` 
+Ordered List | ```<ol>```
+List Item | ```<li>``` 
+Figure | ```<figure>```  
+Image | ```<img>```
+Link | ```<link>``` 
+Active Link | ```<a>``` 
 
 #### Attribute Inheritance 
 
@@ -140,9 +151,22 @@ resource.
 	</meta>
 	</head>
 <body>
-	<h1>this is a simple document with not much content</h1>
+	<h1>This is a simple document with not much content</h1>
+	<h2>This header is smaller</h2>
 	<p>This is a photo</p>
 	<img src="images/sample.png" alt="my image" /><!-- Inserting an Image in a paragraph using its relative path -->
+	<a href="www.google.com">This is a simple active link</a>
+	<ul>
+		<li>This</li>
+		<li>Is An</li>
+		<li>Unordered List</li>
+	</ul>
+	
+	<ol>
+		<li>And This</li>
+		<li>Is An</li>
+		<li>Ordered List</li>
+	</ol>
 	....
 </body>
 </html>
