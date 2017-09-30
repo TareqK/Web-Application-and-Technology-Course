@@ -40,7 +40,8 @@ right order), and files that don't parse correctly are not rendered. In short,
 
 HTML5 is the current standard. It Is more oriented towards semantics. In HTML5,
 all attributes related to presentation are removed, and semantics and presentation
-are **completely** seperated. New sets of tags were added as well, as was animation and other features added.
+are **completely** seperated. New sets of tags were added as well, as was animation
+and other features.
 
 ## Syntax of HTML
 
@@ -69,10 +70,10 @@ breaking this line down :
 
 - ```href="http://mylink.com"``` : The Attribute. It tells the element from where
 to fetch something. Not all elements have attributes, such as the
-```<br>``` tag, but all attributes belong to an element. Tags without 
-attributes or content are known as empty tags. they use a shorthand notation.
+```<br>``` tag, but all attributes belong to an element. 
 
-- ```My Link``` : The Content. This is what is displayed to the user.
+- ```My Link``` : The Content. This is what is displayed to the user.Tags without 
+content are known as empty tags. they use a shorthand notation.
 
 - ```</a>``` : The Closing tag for this element.
 
@@ -140,7 +141,7 @@ own server. There are
 2 ways we can do this. We can use a **relative** path, which is the URL of the 
 resource minus the current URL(ie, where the resource is relative to the
 current file). The other way is using the **absolute** path to the resource,
-which is the complete URL of the resource.
+which is usually the complete URL of the resource.
 
 It is always preferable to use relative paths when writing HTML documents,
 because if we do ever move the HTML files, we wont have to re-write all
@@ -148,6 +149,17 @@ the links in them.
 
 However, if we do want to fetch a resource from another server, we 
 can only use its absolute path. 
+
+More formally, an absolute path is defined as :
+
+> An Absolute or full path points to the same location in a file system,
+ regardless of the current working directory.
+
+And a relative path is defined as :
+
+> A Relative path is the path thats starts from the current directory.
+
+Local and Absolute relative paths use a Unix-like path representation.
 
 ### Example HTML Document Source
 
@@ -163,10 +175,12 @@ can only use its absolute path.
 	</meta>
 	</head>
 <body>
+<div id="my div">
 	<h1>This is a simple document with not much content</h1>
 	<h2>This header is smaller</h2>
 	<p>This is a photo</p>
 	<img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="my image" /><!-- Inserting an Image in a paragraph using its absolute path -->
+	<img src="./my_image" alt="an image" /><!-- Referring to an image using its relative path-->
 	<br />
 	<a href="http://www.google.com">This is a simple active link</a>
 	<ul>
@@ -194,8 +208,17 @@ can only use its absolute path.
 			</ol>
 		</li>
 	</ul>
+</div>
+<div id="my second div">
+This is the start of another Div. 
+<p>
+and this is a paragraph in a div.
+</p>
+<a href="#my div"> And this active link takes us to the first div</a>
+</div>
 </body>
 </html>
+
 ```
 
 
