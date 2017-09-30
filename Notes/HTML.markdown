@@ -163,6 +163,11 @@ Local and Absolute relative paths use a Unix-like path representation.
 
 ### Example HTML Document Source
 
+This is an example HTML document. Try copying and pasting it into a file
+called test.html and opening it in your browser. Dont be afraid to tinker 
+around! There are more example documents in the [Examples Folder](./Examples/)
+in this repository.
+
 ```HTML
 
 <!DOCTYPE html>
@@ -180,7 +185,7 @@ Local and Absolute relative paths use a Unix-like path representation.
 	<h2>This header is smaller</h2>
 	<p>This is a photo</p>
 	<img src="http://www.html-helper.net/wp-content/uploads/2013/07/HTML.jpg" alt="my image" /><!-- Inserting an Image in a paragraph using its absolute path -->
-	<img src="./my_image" alt="an image" /><!-- Referring to an image using its relative path-->
+	<img src="./my_image.png" alt="an image" /><!-- Referring to an image using its relative path-->
 	<br />
 	<a href="http://www.google.com">This is a simple active link</a>
 	<ul>
