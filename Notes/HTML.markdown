@@ -161,7 +161,7 @@ And a relative path is defined as :
 
 Local and Absolute relative paths use a Unix-like path representation.
 
-### Example HTML Document Source
+### Example Simple HTML Document Source
 
 This is an example HTML document. Try copying and pasting it into a file
 called test.html and opening it in your browser. Dont be afraid to tinker 
@@ -169,7 +169,6 @@ around! There are more example documents in the [Examples Folder](./Examples/)
 in this repository.
 
 ```HTML
-
 <!DOCTYPE html>
 <html>
 <head lang = "en"><!-- The Language of the webpage -->
@@ -215,7 +214,7 @@ in this repository.
 	</ul>
 </div>
 <div id="my second div">
-This is the start of another Div. 
+This is the start of another div. 
 <p>
 and this is a paragraph in a div.
 </p>
