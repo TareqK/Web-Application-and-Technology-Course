@@ -1,5 +1,5 @@
 # CSS 
-===
+
 CSS is an acronym of **C**ascading **S**tyle **S**heets. While HTML is 
 used to lay down the "skeleton" of the page, CSS is what is used to 
 make it stylish, adding color and other properties to HTML elements. 
@@ -19,8 +19,6 @@ around the element.
 - The Content is the content of the element being displayed.
 
 We can use CSS to change how these properties are displayed to the user.
-
-===
 
 ## CSS Rule Structure
 
@@ -63,9 +61,6 @@ such as px or cm. Relative values are values that change with the
 size of the page(or their reference point). These are usually fractions
 or percentages and their size is calculated depending on the size of the
 screen they are being displayed on.  
-
-===
-
 
 ### Selectors
 
@@ -135,7 +130,7 @@ a:hover{
 for a list of standard pseudo-classes and their uasge.
 
 
-===
+
 
 ## Tying HTML and CSS
 
