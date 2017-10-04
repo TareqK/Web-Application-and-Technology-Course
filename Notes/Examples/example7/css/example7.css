@@ -1,7 +1,16 @@
 
-h1{
+h1,a{
 	
 	color:red;
+	background:lightgreen;
+	font-family:serif;
+	border:20px solid;
+	border-color: #FBFF81;
+}
+
+a:hover{
+	color:black;
+	font-size:120%;
 }
 h2{
 	
@@ -11,9 +20,29 @@ div
 {
 	color:green;
 	font-weight:bold;
+	font-family:serif;
+	
+}
+
+ul{
+
+	font-size:200%;
+	list-style-type: square;
+
+}
+div ol{
+	color:black;
+	list-style-type:upper-roman;
 	
 }
 a{
-	
-	color:#4B7036;
+color:blue;
+}
+dt{
+	color:black;
+	font-weight:italic;
+	background: #FBFF81;
+}
+di{
+	color:blue;
 }
