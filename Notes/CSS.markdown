@@ -77,10 +77,10 @@ em{
 	font-weight:bold;
 }
 ```
-### Properties for Multiple Elements
+### Selectors for Multiple Elements
 
-If we have a list of elements we want to apply the same elements to ,
-we use a comma seperated list to express them, like so :
+If we have a list of elements we want to apply the same properties to ,
+we use a comma separated list to express them, like so :
 
 ```CSS
 em, div, p{
@@ -90,7 +90,7 @@ em, div, p{
 
 ```
 
-### Properties for Nested  Elements
+### Selectors for Nested  Elements
 If we have an element nested within another element, and we only 
 want to apply a rule to that particular type of nesting(eg, a list 
 within an article, or an item within an unordered list,etc), we 
