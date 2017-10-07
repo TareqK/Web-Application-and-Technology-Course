@@ -65,10 +65,10 @@ screen they are being displayed on.
 ### Selectors
 
 Every CSS rule begins with a selector. A selector identifies which 
-element of the HTML document will be affected by the decelerations in the
-rule. 
+element of the HTML document will be affected by the decelerations in 
+the rule. 
 
-An example is setting the font of emphasis :
+An example is setting the font and color of emphasis :
 
 
 ```CSS
@@ -91,16 +91,102 @@ em, div, p{
 ```
 
 ### Selectors for Nested  Elements
+
 If we have an element nested within another element, and we only 
 want to apply a rule to that particular type of nesting(eg, a list 
 within an article, or an item within an unordered list,etc), we 
 type them one after the other, from parent to child, like so :
+
 ```CSS
 article p{
 	background:red;
 	font-size:200%;
 }
 ```
+
+### Class Selectors 
+
+Sometimes we want to use a different CSS styling for a certain element.
+we use the ```class``` attribute in HTML to do so, allowing us 
+to define multiple CSS rules for the same element but only 
+using one. Lets have a look at this section of an HTML document :
+
+```HTML 
+
+<p class="important">
+asdadasdasd
+</p>
+
+<p class="normal">
+asfaiidsofoaisfoasfd
+</p>
+
+<p>
+adsfaiwojfoivznxkzldKWNDFOGSNDFOI
+</p>
+
+<h1 class="important">asdawef</h1>
+```
+
+and this accompanying CSS document :
+
+```CSS
+
+.important {
+	color:red;
+}
+.normal{
+	color:blue
+}
+p{
+	color:black	
+}
+
+```
+
+What this does is that all Elements whose class is important are 
+displayed in red, all those with the class normal are displayed
+in blue, and all paragraphs with no class are displayed as black.
+
+However, say we change the CSS to become :
+
+```CSS
+
+p.important {
+	color:red;
+}
+
+p.normal{
+	color:blue
+}
+
+p{
+	color:black	
+}
+
+```
+
+and keep the same HTML document. What happens now is that **only paragraphs**
+with the class important are typed in red, while 
+the header is displayed as normal. We use the :
+
+```CSS 
+
+selector.class{
+property:value;	
+}
+```
+
+Syntax to target a specific element and its classes, while we use the :
+
+```CSS 
+
+selector.class{
+property:value;	
+}
+```
+
+Syntax to target **all elements with this class**.
 
 ### Pseudo Selectors
 
@@ -111,6 +197,7 @@ added to a selector to change how the element is displayed after/during
 user interaction.
 
 ```CSS
+
 selector:pseudo-class{
 	property1:value1;
 	property2:value2;
@@ -118,7 +205,8 @@ selector:pseudo-class{
 ```
 
 Say we want to change how a link looks like if the user
-hovers the mous over it
+hovers the mouse over it. WE would use the hover pseudo class like so :
+
 ```CSS
 a:hover{
 	color:black;
@@ -127,13 +215,11 @@ a:hover{
 
 ```
 [See here](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Syntax)
-for a list of standard pseudo-classes and their uasge.
-
-
-
+for a list of standard pseudo-classes and their usage.
 
 ## Tying HTML and CSS
 
+### Using an External Sheet
 HTML and CSS are tied together in the ```<head>``` section of the 
 HTML document. This is done with the following syntax :
 
@@ -149,7 +235,38 @@ HTML document. This is done with the following syntax :
 <body>
 ...
 ```
-Check out [this example](./Examples/example7/) to see this in action.
-
 Before rendering the page, The HTML parser integrates the CSS and HTML files
-to produce the output we want. 
+to produce the output we want.Check out
+[this example](./Examples/example7/) to see this in action.
+### Using an Internal Sheet
+We can also tie HTML with CSS in the **same document**. this is done
+in the ```<style>``` section of an HTML document. this is done like so :
+
+```HTML
+
+<head>
+<style>
+body {
+    background-color: linen;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+</style>
+</head> 
+
+```
+
+### Using Inline CSS
+
+Another way of tying HTML and CSS is using Inline CSS. This is 
+CSS typed within the HTML document and changes only 1 element.  It is 
+not recommended to do this, since we are mixing semantics and 
+presentation. An example of this is :
+```HTML
+
+<h1 style="color:blue;margin-left:30px;">This is a heading</h1> 
+
+``` 
