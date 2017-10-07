@@ -103,6 +103,35 @@ article p{
 	font-size:200%;
 }
 ```
+### Pseudo Selectors
+
+Sometimes, we want to change the rendering of an element depending 
+on if or how the user has interacted with it. For this, we use
+**Pseudo Class Selectors**. Pseudo Class Selectors are a keyword
+added to a selector to change how the element is displayed after/during
+user interaction.
+
+```CSS
+
+selector:pseudo-class{
+	property1:value1;
+	property2:value2;
+}
+```
+
+Say we want to change how a link looks like if the user
+hovers the mouse over it. We would use the hover pseudo class like so :
+
+```CSS
+a:hover{
+	color:black;
+	font-size:200$;
+}
+
+```
+[See here](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Syntax)
+for a list of standard pseudo-classes and their usage.
+
 
 ### Class Selectors 
 
@@ -188,35 +217,49 @@ property:value;
 
 Syntax to target **all elements with this class**.
 
-### Pseudo Selectors
 
-Sometimes, we want to change the rendering of an element depending 
-on if or how the user has interacted with it. For this, we use
-**Pseudo Class Selectors**. Pseudo Class Selectors are a keyword
-added to a selector to change how the element is displayed after/during
-user interaction.
+### Element Selectors 
 
-```CSS
+Say we have this line in an HTML document :
 
-selector:pseudo-class{
-	property1:value1;
-	property2:value2;
-}
+```HTML
+
+<h1 id="title">This is a heading</h1> 
+
 ```
-
-Say we want to change how a link looks like if the user
-hovers the mouse over it. WE would use the hover pseudo class like so :
-
+We can target this specific element using its ID in CSS. To do this, 
+we use an **element selector** element selectors have this syntax :
 ```CSS
-a:hover{
-	color:black;
-	font-size:200$;
+\#id{
+	property:value;
 }
 
 ```
-[See here](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes#Syntax)
-for a list of standard pseudo-classes and their usage.
 
+so in this case, we would say
+
+```CSS
+
+\#title{
+	color:red;
+	font-weight:bold;
+}
+
+```
+
+### Contextual Selectors
+
+In CSS, we can select elements based on context, ie , where they 
+lie in the document. These are used, for example, where we want 
+only the title of a paragraph in an article to be a specific color,
+or if we want a specific text font but only on the left margin, and so 
+on. There are 4 types of contextual selectors :
+Selector | Applies when | Example
+--|--|--
+Descendant(>)| The element is a direct child of another | div>p
+Child( ) | The element is a child, no matter how far, of the root element | div p h1
+Adjacent Sibling(+) | When the elements have the same parent and are next to each other, the rule is applied to the second element| h1+h2
+Sibling(~) |When the elements have the same parent, the rule is applied to the second element| p~p
 ## Tying HTML and CSS
 
 ### Using an External Sheet
