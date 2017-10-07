@@ -230,7 +230,7 @@ Say we have this line in an HTML document :
 We can target this specific element using its ID in CSS. To do this, 
 we use an **element selector** element selectors have this syntax :
 ```CSS
-\#id{
+#id{
 	property:value;
 }
 
@@ -240,7 +240,7 @@ so in this case, we would say
 
 ```CSS
 
-\#title{
+#title{
 	color:red;
 	font-weight:bold;
 }
@@ -254,12 +254,13 @@ lie in the document. These are used, for example, where we want
 only the title of a paragraph in an article to be a specific color,
 or if we want a specific text font but only on the left margin, and so 
 on. There are 4 types of contextual selectors :
-|Selector | Applies when | Example |
-|---|---|---|
-|Descendant(>)| The element is a direct child of another | div>p |
-|Child( ) | The element is a child, no matter how far, of the root element | div p h1 |
-|Adjacent Sibling(+) | When the elements have the same parent and are next to each other, the rule is applied to the second element| h1+h2 |
-|Sibling(\~) |When the elements have the same parent, the rule is applied to the second element| p\~p |
+
+Selector |Applies when | Example 
+---|---|---
+Descendant(>) | The element is a direct child of another | div>p 
+Child( ) | The element is a child, no matter how far, of the root element | div p h1 
+Adjacent Sibling(+) | When the elements have the same parent and are next to each other, the rule is applied to the second element| h1+h2 
+Sibling(\~) | When the elements have the same parent, the rule is applied to the second element| p\~p 
 ## Tying HTML and CSS
 
 ### Using an External Sheet
