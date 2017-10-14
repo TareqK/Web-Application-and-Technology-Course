@@ -20,6 +20,18 @@ around the element.
 
 We can use CSS to change how these properties are displayed to the user.
 
+### Collapsing 
+
+If we set the size of the ```margin``` or ```padding```, sometimes
+2 elements will **overlap**. If there are 2 rules for 2 elements that overlap
+**vertically**, then the distance between them is ** the longer distance
+in the rule** ie, if one margin is 90px and one is 50px, then the vertical distance
+between the 2 elements will be 90px. if
+they overlap **horizontally**, then both rules are applied and 
+**the total distance between them is the length of the margins added together**. ie,
+if we have 2 elements horizontally overlapping, one that has a margin of 20px and 
+the other 30px, then the horizontal distance between the 2 elements will be 50px.
+
 ## CSS Rule Structure
 
 Every CSS rule has the following structure
