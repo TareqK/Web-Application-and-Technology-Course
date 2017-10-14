@@ -220,7 +220,7 @@ property:value;
 Syntax to target **all elements with this class**.
 
 
-#### Element Selectors 
+#### Element(ID) Selectors 
 
 Say we have this line in an HTML document :
 
@@ -233,6 +233,7 @@ We can target this specific element using its ID in CSS. To do this,
 we use an **element selector** element selectors have this syntax :
 
 ```CSS
+ 
 #id{
 	property:value;
 }
@@ -250,6 +251,107 @@ so in this case, we would say
 
 ```
 
+#### Attribute Selectors
+
+We can select specific attributes to style. We do this using the
+```[attribute]``` selector, which changes every attribute with this 
+name. For example, if we want to change how the ```title``` attribute 
+is displayed, we would use this CSS rule :
+
+```CSS
+
+[title] {
+	cursor : help;
+	padding : 3px;
+	color : purple;
+}
+
+```
+
+Say we have this HTML document :
+
+
+```HTML
+...
+...
+<img src="../images/log" title="Home Icon" />
+<article title="my main article" >
+...
+...
+</article>
+
+```
+This results in every title in our HTML document being purple with a
+3px padding. 
+
+We can also specify a specific attribute value or set of attribute 
+values to change using the
+
+```CSS
+
+[attribute operation value"]{
+	property:value;
+	
+}
+```
+Syntax. For example, The CSS rule :
+
+```CSS
+
+[title="mytitle"]{
+	color:green;
+	
+}
+
+```
+
+matches every title attribute with the value ```mytitle```. 
+
+Another example is the CSS rule :
+
+```CSS
+
+[title~="command"]{
+	color:green;
+	
+}
+
+```
+
+which matches every title attribute with the word ```command``` somewhere
+in it. 
+
+We can also specify which attribute of which element we want 
+to change using the
+
+```CSS
+
+element[attribute operation value]{
+	property:value;
+	
+}
+
+```
+
+Syntax. For example, the CSS rule :
+
+```CSS
+
+p[title*="Brazil"]{
+	color:green;
+	background-color:yellow;
+	
+}
+
+```
+Changes the title of every paragraph element containing the string ```Brazil```
+in its title attribute to have green text and a yellow background.
+
+
+For a full list of possible attribute selectors and operators,
+[see here](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors).
+
+
 #### Contextual Selectors
 
 In CSS, we can select elements based on context, ie , where they 
@@ -264,6 +366,8 @@ Descendant(>) | The element is a direct child of another | div>p
 Child( ) | The element is a child, no matter how far, of the root element | div p h1 
 Adjacent Sibling(+) | When the elements have the same parent and are next to each other, the rule is applied to the second element| h1+h2 
 Sibling(\~) | When the elements have the same parent, the rule is applied to the second element| p\~p 
+
+
 
 ### Inheritance 
 
@@ -376,6 +480,7 @@ color and margins, then we can do the following :
 
 We can combine all 3 types of CSS, if we have to, especially if we want
 to override a specific set of elements on a page, as 
-Inline CSS overrides embedded CSS, embedded CSS overrides external CSS.
+Inline CSS overrides embedded CSS, embedded CSS overrides external CSS, and 
+external CSS overrides the built in browser style.
 
 > Inline CSS &gt; Embedded CSS &gt; External CSS &gt; Built in Browser Style
