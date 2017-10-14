@@ -289,7 +289,7 @@ values to change using the
 
 ```CSS
 
-[attribute operation value"]{
+[attribute operation value]{
 	property:value;
 	
 }
