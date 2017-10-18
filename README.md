@@ -13,4 +13,4 @@
 
 ![Chapter 3 : Introduction to CSS](./Notes/CSS.markdown)
 
-![Chapter 4 : HTML Tables and Forms](../HTML2.markdown)
+![Chapter 4 : HTML Tables and Forms](./Notes/HTML2.markdown)
