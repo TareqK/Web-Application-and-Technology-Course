@@ -101,11 +101,10 @@ preferred to do all this in CSS sheets.
 
 ### Additional Table Tags
 
-
 Tag | Description
 ---|---
 ```<caption>``` | Gives the table a title/name, helps with accessibility
-``<col>,<colgroup>``` | describe columns, useful for when we want to change the style of certain column groups or individual columns.
+```<col>```,```<colgroup>``` | describe columns, useful for when we want to change the style of certain column groups or individual columns.
 ```<thead>``` | the header row of the table, helps give all headers a certain style.
 ```<tfoot>``` | the footer row of the table, give all footers a certain style.
 ```<tbody>``` | contains the data of the table, helps us set the style of the table.
