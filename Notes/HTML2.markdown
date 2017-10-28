@@ -160,3 +160,12 @@ Creates a new form that makes a GET request to the resource process.php
 to be run.
 
 For more details on form elements and their attributes, [see the W3Schools reference](https://www.w3schools.com/html/html_form_elements.asp)
+
+### Input Validation
+
+There are several ways to validate the input of a form. The simplest is
+using the ```pattern``` attribute, which matches the test to a
+regular exression. 
+
+Another way is using javascript, but that is a topic for another time.
+
