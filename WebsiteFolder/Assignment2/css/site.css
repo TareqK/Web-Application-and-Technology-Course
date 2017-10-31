@@ -1,0 +1,149 @@
+body{
+background :#FFFBC0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    
+    width:75%;
+}
+nav a{
+border:2px solid black;
+background:#D8CA13;
+text-align:left;
+}
+
+
+
+nav a:hover{
+	font-size:120%;
+}
+
+
+.navimg{
+
+border:0px;
+background:none;
+}
+
+header{
+font-family: sans-serif;
+font-size : 100%;
+}
+
+section{
+font-family: times;
+font-size : 120%;
+
+}
+ul{
+	background:url("../image/back1.jpg") no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:300px;
+}
+
+ul ul{
+	background:url("../image/back2.jpg") no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:150px;
+}
+ol{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:200px;
+    list-style:upper-arabic;
+}
+
+ol ol{
+
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:150px;
+    list-style:lower-alpha;
+
+}
+dl{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    width:200px;
+}
+
+dt{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    width:200px;
+}
+dd{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:right;
+    width:150px;
+}
+
+
+.clickimage:hover{
+border:1px solid black;
+transform: scale(1.05, 1.05);
+}
+
+.internal:hover{
+	color:white;
+}
+.internal:visited{
+	color:black;
+
+}
+.internal{
+	color:white;
+}
+
+nav .internal:visited{
+	color:white
+
+}
+nav .internal:hover{
+	color:black;
+}
+
+figure{
+background :#FFFBC0;
+    margin-left: auto;
+    margin-right: auto;
+    width:500px;
+}
+figure img:hover{
+transform: scale(1.40, 1.40);
+}
+
+
+
+.new {
+color:red;
+font-size:150%;
+}
+
+.sale{
+color:green;
+font-size:130%;
+}
+
+[href^="mailto"]::before{
+    content: "";
+    display: block;
+    background:url("../image/email.png") no-repeat;
+    background-size:20px;
+    width: 20px;
+    height: 20px;
+	float:left;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+	margin:0px 0px -50px 20px;    
+   }
