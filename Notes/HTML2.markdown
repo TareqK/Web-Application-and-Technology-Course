@@ -164,7 +164,7 @@ For more details on form elements and their attributes, [see the W3Schools refer
 ### Input Validation
 
 There are several ways to validate the input of a form. The simplest is
-using the ```pattern``` attribute, which matches the test to a
+using the ```pattern``` attribute, which matches the text to a
 regular exression. 
 
 Another way is using javascript, but that is a topic for another time.
