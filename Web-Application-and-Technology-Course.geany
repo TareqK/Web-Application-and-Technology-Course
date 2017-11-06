@@ -28,12 +28,8 @@ long_line_column=72
 
 [files]
 current_page=0
-FILE_NAME_0=2034;HTML;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FAssignment2%2Fhtml%2Fshirts.html;0;4
-FILE_NAME_1=2046;HTML;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FAssignment2%2Fhtml%2Ftrousers.html;0;4
-FILE_NAME_2=0;CSS;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FAssignment2%2Fcss%2Fsite.css;0;4
-FILE_NAME_3=0;LaTeX;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FDocuments%2FBiology%20Lab%2FBiologyLabExp5.aux;0;4
-FILE_NAME_4=0;None;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FDocuments%2FBiology%20Lab%2FBiologyLabExp5.log;0;4
-FILE_NAME_5=0;LaTeX;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FDocuments%2FBiology%20Lab%2FBiologyLabExp5.tex;0;4
+FILE_NAME_0=3068;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FNotes%2FCSS2.markdown;0;4
+FILE_NAME_1=386;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FREADME.md;0;4
 
 [VTE]
 last_dir=/home/tareq/Code/Web-Application-and-Technology-Course
