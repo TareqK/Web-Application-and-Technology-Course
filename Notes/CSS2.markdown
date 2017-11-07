@@ -303,4 +303,8 @@ Take note that the order of the elements is important. If we place, for example
 ```nav``` after ```<div id="main">```,then it will be in the center instead of the
 left. 
 
-This approach is more tolerant to resizing that using floats.
+This approach is more tolerant to resizing that using floats. However,
+there are some problems. Once again, screens with different pixels per inch
+will display this layout.
+
+
