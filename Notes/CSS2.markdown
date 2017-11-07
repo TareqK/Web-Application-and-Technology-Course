@@ -133,10 +133,3 @@ size of 0 and the block disappears. This is because the the browser
 has no idea where to display the block. We can solve this by creating
 an invisible element with a specific size.
 
-
-## Hiding Elements
-
-1. Using Display 
-
-2. Using Visibility
-
