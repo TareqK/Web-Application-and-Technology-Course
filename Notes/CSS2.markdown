@@ -133,3 +133,174 @@ size of 0 and the block disappears. This is because the the browser
 has no idea where to display the block. We can solve this by creating
 an invisible element with a specific size.
 
+## Multi Column Layouts
+
+There are 2 ways to create a multi column page:
+
+1. Using floats to create columns
+
+2. Using positioning to create columns
+
+There are tradeoffs to each method, and we will be discussing these. 
+
+### Using Floats to Create Columns
+
+This technique starts with dividing the page into left and right. It 
+is recommended to use ```em``` measurements, because they scale relative
+to the chosen font. 
+
+say we have this html document
+
+```HTML
+...
+...
+<nav>
+...
+..
+...
+</nav>
+<div id="main>
+...
+...
+...
+</div>
+...
+...
+...
+```
+To split this page into 2, we can use this CSS style rule
+
+```CSS
+
+nav{
+...
+...
+float:left
+size:12em
+}
+#main{
+...
+...
+margin:14em;
+}
+```
+
+Say we want to add a second column to the left.
+
+to do that, we will have an HTML document like this:
+
+```HTML
+...
+...
+<nav>
+...
+...
+...
+</nav>
+<aside>
+...
+...
+...
+</aside>
+<div id="main>
+...
+...
+...
+</div>
+...
+...
+...
+```
+
+with this CSS style sheet :
+
+```CSS
+
+nav{
+...
+...
+float:left
+width:12em
+}
+#main{
+...
+...
+margin:14em;
+}
+aside{
+...
+...
+float:right;
+width:12em;
+}
+```
+
+This results in a 3 column layout with a header and a footer,ie, a 
+panel layout.
+
+The main disadvantage of this method is resizing. It doesnt scale up 
+and down well, and data loss is almost certain on smaller screens.
+
+### Using Positioning to Create Columns
+
+Say we want to create the same 3 column layout with a header and a footer.
+Then we would have this HTML document : 
+
+```HTML
+<div id="container">
+<aside>
+...
+...
+...
+</aside>
+<nav>
+...
+...
+...
+</nav>
+<div id="main>
+...
+...
+...
+</div>
+</div>
+...
+...
+...
+```
+
+
+with this CSS style sheet :
+
+```CSS
+#container{
+position:relative
+}
+nav{
+...
+...
+position:absolute;
+left:0;
+top:0;
+}
+aside{
+...
+...
+position:absolute;
+right:0;
+top:0;
+}
+
+#main{
+...
+...
+left-margin:14em;
+right-margin:14em;
+}
+```
+
+Take note that the order of the elements is important. If we place, for example
+```nav``` after ```<div id="main">```,then it will be in the center instead of the
+left. 
+
+This approach is more tolerant to resizing that using floats.
