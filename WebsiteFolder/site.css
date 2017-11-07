@@ -1,0 +1,21 @@
+body{
+background :#FFFBC0;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align:center;
+    width:75%;
+}
+nav a{
+width:30%;
+height:auto;
+display:block;
+text-align:center;
+border:1px solid black;
+background:#D8CA13;
+}
+
+
+nav a:hover{
+	font-size:120%;
+}
+

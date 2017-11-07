@@ -7,6 +7,11 @@ background :#FFFBC0;
     width:75%;
 }
 nav a{
+    left:100px;
+top:100px;
+    
+    
+margin:50px;
 border:2px solid black;
 background:#D8CA13;
 text-align:left;
@@ -20,7 +25,9 @@ nav a:hover{
 
 
 .navimg{
-
+left:10px;
+top:10px;
+    
 border:0px;
 background:none;
 }
@@ -89,6 +96,7 @@ dd{
 
 
 .clickimage:hover{
+position:absolute;
 border:1px solid black;
 transform: scale(1.05, 1.05);
 }
@@ -113,12 +121,16 @@ nav .internal:hover{
 }
 
 figure{
+left:10px;
+top:10px;
+    
 background :#FFFBC0;
     margin-left: auto;
     margin-right: auto;
     width:500px;
 }
 figure img:hover{
+    
 transform: scale(1.40, 1.40);
 }
 
