@@ -307,3 +307,60 @@ This approach is more tolerant to resizing that using floats. However,
 there are some problems. Once again, different screens will render this 
 differently.
 
+## Approaches to CSS Layout
+
+One of the main problems faced by web designers is that the size of screens changes. 
+There are 2 approaches to solve this:
+
+1. Fixed Layout : We are using pixel measurements and the size of the 
+elements and their location is fixed. Resizing doesn't change the size of the
+elements on the screen.
+
+2. Liquid Layout : We are using percentages of the screen. The main advantage
+of this approach is that changing the screen size changes the size of the elements.
+However, this has a limit.
+
+## Responsive Design
+
+The first step of respoisive design is to query the media the page
+is being displayed on. This is done via the ```viewport``` element.
+
+This is done like so :
+
+```HTML
+
+...
+<head>
+	<meta name="viweport" content="width=device-width"/>
+...
+...
+
+
+```
+
+After setting the viewport, we know what kind of device we are going to 
+load our site on. We do this using **Media Queries**, like so :
+
+```CSS
+
+@media only screen and (max-width:480px){
+CSS rules......
+}
+
+```
+
+We apply this on our HTML like so :
+
+```HTML
+
+...
+...
+<link rel="stylesheet" href="mobile.css" media="screen and (max-width:480px)"/>
+
+```
+## CSS Frameworks
+
+Frameworks are programs we build our programs on. One of the most famous
+CSS frameworks is [Bootstrap](http://getbootstrap.com/), which does 
+most of the heavy lifting for us in reactive design. Bootsrap has a grid
+system, which divides the page into 12 sections.
