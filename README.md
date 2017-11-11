@@ -15,3 +15,5 @@
 ![Chapter 4 : HTML Tables and Forms](./Notes/HTML2.markdown)
 
 ![Chapter 5 : Advanced CSS : Layout](./Notes/CSS2.markdown)
+
+![Chapter 6 : JavaScript : Client-Side Scripting](./Notes/JS.markdown)
