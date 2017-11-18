@@ -77,3 +77,119 @@ the asynchronous layer dynamically updates the content on the page, and
 on top of all these, there are frameworks, which make our job easier
 and give us extra features.
 
+
+## Tying JavaScript and HTML
+
+Similar to CSS,There are 3 main ways to integrate JavaScript with HTML.
+
+1. Inline JavaScript.
+2. Embedded JavaScript.
+3. External JavaScript.
+
+### Inline JavaScript.
+
+In inline JavaScript, we use the ```<a>``` element in HTML to call 
+the javascript interpreter. For example, we can say:
+
+```HTML
+
+<a href="JavaScript:OpenWindow();">more info</a>
+<input type="button" onclick="alert('Are you sure?');"/>
+
+```
+
+This creates an elert on pressing the button.
+
+### Embedded JavaScript
+
+here we yse the ```<script>``` element to call the JavaScript interpreter
+on the portion of the HTML file.
+
+
+### External JavaScript
+
+we do this in the ```<head>``` section of the HTML document, using the 
+```<script type="text/javascript" .... />``` element. This is 
+similar to CSS.
+
+### JavaScript Syntax
+
+For a detailed review of JavaScript syntax and best practices, check out 
+the [W3 Schools Referrence](https://www.w3schools.com/js/js_syntax.asp).
+
+JavaScript is a **C-Oriented Language**. This means that every statement
+should(and preferably must) end with a ```;```, and blocks are defined using 
+curly brackets ```{}```. It is also **Case Sensitive** 
+and **Type Sensitive**. JavaScript best practices tell us  
+to use **Camel Notation**. 
+
+A quirk of JavaScript is that the Scope of
+variables in blocks is not supported. This means that variables defined
+within a block can be accessed from outside the block it was defined in.
+
+Comments in JavaScript are begun with ```//```, and multiline comments are
+begun with ```/*``` and ended with ```*/```.
+
+### Objects
+
+In JavaScript, everything is an object, or technically, object like. We interact
+with objects similar to the way we do in Java, with the exception of the 
+```String```and ```Array```classes, as well as the primitives,
+which are inferred implicitly.
+
+### Properties 
+
+We can change the properties of an object using the ```.``` notation. There
+is no concept of private,public,or protected properties in a class. The 
+```.``` is used as both a getter and a setter, and we can say
+```someObject.someProperty = someValue``` to set the value
+ and ```console.log(someObject.someProperty)``` to get the value.
+
+
+### Variables
+
+Variables in JavaScript are defined with the ```var``` keyword. Variables
+in JavaScript have no type, and we can change their data type on the fly
+as we go without raising any errors. All variables in JavaScript are **Reference
+Variables**, which means they all point to an object. In fact, everything 
+in JavaScript is an object, *even functions*. 
+
+### Arrays 
+
+Arrays in JavaScript can contain multiple types of objects at the same time. 
+We dont have to give their size before hand, and they can grow and shrink 
+during runtime. There are several array functions, such as ```push()```,```pop()```,
+```concat()```,```shift()```,```sort()```, and many more.
+
+
+### Loops 
+Loops in JavaScript works mostly like in C. there are for loops, while loops,
+and **enhanced for loops**. 
+
+### Conditional Statements
+
+Conditional Statements work similar to C as well, however, we have the
+```===``` operator to match Type **and** Value.
+
+### Try-Catch
+
+Like Java, JavaScript has a ```try...catch``` statement to handle 
+exceptions.
+
+### Interacting With the JavaScript Interpreter
+
+The ```document``` reference in JavaScript refers to the HTML document
+the script was called from. We can use this if we want to modify the 
+HTML page using ```document.write()```.
+
+JavaScript has a ```console``` reference which is useful for debugging. 
+using the ```console.log()``` function prints a string to the 
+browser debugging console which can help us find out what went wrong.
+
+Another useful way to interact with JavaScript is using the ```alert()```
+function, which produces a browser pop-up that we can click away. However,
+using this too often is tedious, so for development purposes, using ```console.log```
+is easier.
+
+
+
