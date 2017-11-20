@@ -67,52 +67,8 @@ response is updated. This gives a smoother experience to the user since
 we dont have to reload the whole page and interrupt their actions 
 whenever there is a change in the content. 
 
-## JavaScript Layers
 
-> HTML --> CSS --> JavaScript(Presentation) --> JavaScript(Validation) --> JavaScript(Asynchronous) --> JavaScript(Frameworks)
-
-Every Layer of JavaScript does something different. The Presentation layer creates the 
-view of the page, the validation layer checks the user inputs on the client-side,
-the asynchronous layer dynamically updates the content on the page, and 
-on top of all these, there are frameworks, which make our job easier
-and give us extra features.
-
-
-## Tying JavaScript and HTML
-
-Similar to CSS,There are 3 main ways to integrate JavaScript with HTML.
-
-1. Inline JavaScript.
-2. Embedded JavaScript.
-3. External JavaScript.
-
-### Inline JavaScript.
-
-In inline JavaScript, we use the ```<a>``` element in HTML to call 
-the javascript interpreter. For example, we can say:
-
-```HTML
-
-<a href="JavaScript:OpenWindow();">more info</a>
-<input type="button" onclick="alert('Are you sure?');"/>
-
-```
-
-This creates an elert on pressing the button.
-
-### Embedded JavaScript
-
-here we yse the ```<script>``` element to call the JavaScript interpreter
-on the portion of the HTML file.
-
-
-### External JavaScript
-
-we do this in the ```<head>``` section of the HTML document, using the 
-```<script type="text/javascript" .... />``` element. This is 
-similar to CSS.
-
-### JavaScript Syntax
+## JavaScript Syntax
 
 For a detailed review of JavaScript syntax and best practices, check out 
 the [W3 Schools Referrence](https://www.w3schools.com/js/js_syntax.asp).
@@ -188,8 +144,118 @@ browser debugging console which can help us find out what went wrong.
 
 Another useful way to interact with JavaScript is using the ```alert()```
 function, which produces a browser pop-up that we can click away. However,
-using this too often is tedious, so for development purposes, using ```console.log```
+using this too often is tedious, so for development purposes, using ```console.log()```
 is easier.
 
+## JavaScript Layers
+
+> HTML --> CSS --> JavaScript(Presentation) --> JavaScript(Validation) --> 
+> JavaScript(Asynchronous) --> JavaScript(Frameworks)
+
+Every Layer of JavaScript does something different. The Presentation layer creates the 
+view of the page, the validation layer checks the user inputs on the client-side,
+the asynchronous layer dynamically updates the content on the page, and 
+on top of all these, there are frameworks, which make our job easier
+and give us extra features.
 
 
+## Tying JavaScript and HTML
+
+Similar to CSS,There are 3 main ways to integrate JavaScript with HTML.
+
+1. Inline JavaScript.
+2. Embedded JavaScript.
+3. External JavaScript.
+
+### Inline JavaScript.
+
+In inline JavaScript, we use the ```<a>``` element in HTML to call 
+the javascript interpreter. For example, we can say:
+
+```HTML
+
+<a href="JavaScript:OpenWindow();">more info</a>
+<input type="button" onclick="alert('Are you sure?');"/>
+
+```
+
+This creates an elert on pressing the button.
+
+### Embedded JavaScript
+
+here we yse the ```<script>``` element to call the JavaScript interpreter
+on the portion of the HTML file.
+
+
+### External JavaScript
+
+we do this in the ```<head>``` section of the HTML document, using the 
+```<script type="text/javascript" .... />``` element. This is 
+similar to CSS.
+
+
+### The DOM
+
+DOM Stands for **D**ocument **O**Bject **M**odel. It is a tree structure
+built for HTML Documents. Every Attribute in the HTML document is a node
+in this tree. The root of the tree is the **Doument Root**
+
+This is important to find out how positions are related to others in the
+document. Every element in this tree is an object. All Nodes in this
+tree share common attributes and methods.
+
+The DOM is a programming interface for HTML. Simply put, 
+**The HTML DOM is a standard for how to get, change, add, or delete HTML elements**.
+
+The set of common attributes and methods can be 
+[found here](https://www.w3schools.com/js/js_htmldom_document.asp).
+
+####  Using JavaScript to modify the DOM
+
+We can use JavaScript to create and change HTML elements this way. This is
+done using a set of methods.
+
+The most important functions we need to do this are ```getElemenById()``` and ```getElementByTagName()```.
+we can use these to get any HTML object in the document, which gives us the ability to change its
+attributes using ```.``` notation like any other JavaScript object.
+
+The most important properties we will change are ```InnerHTML```, which is the content of the tag,
+and ```style```, which is its CSS styling.
+
+We can also change the structure of the document using the ```appendChild()```,
+```removeChild()```,and others such as ```createTextNode()```.
+
+Changing the style is simple. we simply use ```getElementById().style.mycssproperty = value;```
+or ```getElementByTagName().style.mycssproperty = value;```.
+
+#### Interacting With DOM Object Events.
+
+We can interact with events generated by HTML objects using JavaScript.
+these are events such as ```onclick```, ```onmouseover```,```onchange```,etc. We have seen this before
+in using inline JavaScript. we do this using the 
+event name as an attribute of the element, followed by the JavaScript code we want to execute. For Example,
+
+```<div id="forgotpass" onclick="forgotpass();">Forgot Password?</div>```
+
+alternatively, we can do this inside the JavaScript document:
+
+```document.getElementById('forgotpass').onclick = forgotpass;```
+
+another way to do this in JavaScript, supported by modern browsers, is by doing
+
+```
+function forgotpass() {
+  alert("Hello, world!");
+}
+
+var element = document.getElementById("forgotpass");
+element.addEventListener("click", forgotpass, false);
+
+```
+
+We can use all three, however, using the second or third method has 
+the added benefit of not cluttering up our HTML document, and giving us
+more fine-tuned control over the element during writing the function.
+
+For more examples to events reacting to DOM events in JavaScript, check the 
+[W3Schools reference](https://www.w3schools.com/js/js_events_examples.asp).

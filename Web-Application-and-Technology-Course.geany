@@ -27,11 +27,9 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=3
-FILE_NAME_0=1042;HTML;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FLab5%2FSolutions%2FExcersise13%2Findex.html;0;4
-FILE_NAME_1=0;CSS;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FLab5%2FSolutions%2FExcersise13%2Flab07-exercise12.css;0;4
-FILE_NAME_2=1001;CSS;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FLab5%2FSolutions%2FExcersise13%2Flab07-exercise12-desktop.css;0;4
-FILE_NAME_3=1104;CSS;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FWebsiteFolder%2FLab5%2FSolutions%2FExcersise13%2Flab07-exercise12-mobile.css;0;4
+current_page=0
+FILE_NAME_0=7641;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FNotes%2FJS.markdown;0;4
+FILE_NAME_1=12251;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FNotes%2FCSS.markdown;0;4
 
 [VTE]
 last_dir=/home/tareq/Code/Web-Application-and-Technology-Course
