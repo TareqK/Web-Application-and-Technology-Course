@@ -17,3 +17,5 @@
 ![Chapter 5 : Advanced CSS : Layout](./Notes/CSS2.markdown)
 
 ![Chapter 6 : JavaScript : Client-Side Scripting](./Notes/JS.markdown)
+
+![Chapter 7 : PHP : Server-Side Scripting](./Notes/PHP.markdown)
