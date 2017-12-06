@@ -1,0 +1,23 @@
+.topHeaderRow li{
+display:inline;
+margin:0px
+justify-content: end;
+}
+
+.topHeaderRow ul{
+border:0px;
+display:inline;
+margin:0px
+justify-content: end;
+
+}
+
+.first-bottom{
+color:white;
+background-color:purple;
+}
+
+.last-bottom{
+text-align:center;
+background-color:purple;
+}
