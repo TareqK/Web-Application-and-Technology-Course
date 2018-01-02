@@ -19,7 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
  $image = $postBody->image;
  $caption =  $postBody->caption;
  $location_id = $postBody->locationId;
- $sql = "INSERT INTO `images`(`image_id`, `caption`, `image`,`location_id`) VALUES (NULL, '".$caption."', '".$image."',"$location_id")";
+ $sql = "INSERT INTO `images`(`image_id`, `caption`, `image`,`location_id`) VALUES (NULL, '".$caption."', '".$image."',".$location_id.")";
  $db->conn->query($sql) or die($db->conn->error);
  $db->conn->commit();
  $db->conn->close();
@@ -30,7 +30,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 }else if($_SERVER['REQUEST_METHOD'] == "GET"){
 	
   $location = $_GET['location'];
-  $sql = "SELECT `image` FROM `images` WHERE `location_id` = "(int).$location.""; 
+  $sql = "SELECT `image` FROM `images` WHERE `location_id` = ".(int)$location.""; 
   $res =  $db->conn->query($sql) or die($db->conn->error);
   $set = array();
   while($row = $res->fetch_assoc()) {
@@ -43,7 +43,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
   $postBody = file_get_contents("php://input");
   $postBody = json_decode($postBody);
   $image_id = $postBody->imageId;
-  $sql = "DELETE * FROM `images` WHERE `image_id` = "(int).$image_id.""; 
+  $sql = "DELETE * FROM `images` WHERE `image_id` = ".(int)$image_id.""; 
   $res =  $db->conn->query($sql) or die($db->conn->error);
   $db->conn->commit();
   $db->conn->close();

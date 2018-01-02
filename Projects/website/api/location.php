@@ -28,7 +28,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 }else if($_SERVER['REQUEST_METHOD'] == "GET"){
 	
   $location = $_GET['location'];
-  $sql = "SELECT * FROM `locations` WHERE `location_id` = "(int).$location.""; 
+  $sql = "SELECT * FROM `locations` WHERE `location_id` = ".(int)$location.""; 
   $db->conn->query($sql) or die($db->conn->error);
   $db->conn->close();
  
