@@ -8,7 +8,6 @@ $db = new Database();
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
- // Get data
  $postBody = file_get_contents("php://input");
  $postBody = json_decode($postBody);
 
@@ -56,12 +55,13 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
  }
 
 }
+    $db->conn->close();
 }
 else if($_SERVER['REQUEST_METHOD'] == "GET"){
 
 if(authorize_process(1)){
 $sql="SELECT * FROM users";
-$res = $db->conn->query($sql);
+$res = $db->conn->query($sql) or die($db->conn->error);
 $set = array();
 while($row = $res->fetch_assoc()) {
 array_push($set,$row);
@@ -69,8 +69,9 @@ array_push($set,$row);
 echo(json_encode($set));
 }
 else{
-echo("hello there general kenobi");
+echo("Hello there General Kenobi");
 }
+$db->conn->close();
 
 }
 
