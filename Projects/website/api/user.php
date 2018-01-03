@@ -1,7 +1,8 @@
  <?php
- 
-$authorization_file="/var/www/html/api/utils/authorization.php";
+$authorization_file="./utils/authorization.php";
 require($authorization_file);
+$database_file= "./config/database.php";
+include_once($database_file);
 
 
 $db = new Database();

@@ -1,6 +1,8 @@
 <?php
-$authorization_file="/var/www/html/api/utils/authorization.php";
+$authorization_file="./utils/authorization.php";
 require($authorization_file);
+$database_file= "./config/database.php";
+include_once($database_file);
 
 
 $db = new Database();
@@ -28,9 +30,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	http_response_code(403);
 }
 }else if($_SERVER['REQUEST_METHOD'] == "GET"){
-	
-  $location = $_GET['location'];
-  $sql = "SELECT `image` FROM `images` WHERE `location_id` = ".(int)$location.""; 
+  if(isset$_GET['location_id']){
+  $location_id = $_GET['location_id'];
+  $sql = "SELECT `image_id` FROM `images` WHERE `location_id` = ".(int)$location_id.""; 
   $res =  $db->conn->query($sql) or die($db->conn->error);
   $set = array();
   while($row = $res->fetch_assoc()) {
@@ -38,6 +40,20 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	}
   echo(json_encode($set));	
   $db->conn->close();
+  }else if(isset$_GET['image_id']){
+	$sql = "SELECT * FROM `images` WHERE `image_id` = "(int)$image_id.""; 
+    $res =  $db->conn->query($sql) or die($db->conn->error);
+    if($res){
+		$row=$res->fetch_assoc();
+		echo(json_encode($res));
+	}
+	else{
+		http_response_code(400);
+		echo("image not found");
+	}
+	  
+  }
+  
  
 }else if($_SERVER['REQUEST_METHOD'] == "DELETE"){
   $postBody = file_get_contents("php://input");

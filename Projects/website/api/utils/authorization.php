@@ -1,8 +1,7 @@
 <?php 
 
 ini_set("error_reporting", E_ALL);
-$database_file= "/var/www/html/api/config/database.php";
-include_once($database_file);
+
 
 function authorize_process($level){
 if(!isset($_COOKIE['session_token'])){

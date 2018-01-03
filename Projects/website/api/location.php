@@ -1,6 +1,8 @@
 <?php
-$authorization_file="/var/www/html/api/utils/authorization.php";
+$authorization_file="./utils/authorization.php";
 require($authorization_file);
+$database_file= "./config/database.php";
+include_once($database_file);
 
 
 $db = new Database();
@@ -26,11 +28,31 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	http_response_code(403);
 }
 }else if($_SERVER['REQUEST_METHOD'] == "GET"){
-	
-  $location = $_GET['location'];
-  $sql = "SELECT * FROM `locations` WHERE `location_id` = ".(int)$location.""; 
-  $db->conn->query($sql) or die($db->conn->error);
+
+  if(!isset($_GET['location_id'])){
+  $sql = "SELECT * FROM `locations`"; 
+  $set = array();
+  $res = $db->conn->query($sql) or die($db->conn->error);
   $db->conn->close();
+  $set=array();
+  while($row = $res->fetch_assoc()) {
+     array_push($set,$row);
+  }
+  echo(json_encode($set));
+}else{
+	$location_id = $_GET['location_id'];
+	$sql = "SELECT * FROM `locations` WHERE `location_id` = ".$location_id.""; 
+	$res = $db->conn->query($sql) or die($db->conn->error);
+    $db->conn->close();
+    if($res){
+	  $row = $res->fetch_assoc();
+	  echo(json_encode($row));
+	}
+	else{
+	 http_response_code(400);	
+	 echo("location not found");
+	}
+}
  
 }
  
