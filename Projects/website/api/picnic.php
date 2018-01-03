@@ -69,6 +69,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 	}
 	echo(json_encode($set));
 }
+else{
+	$sql="SELECT * FROM `picnics`";
+$res = $db->conn->query($sql) or die($db->conn->error);
+$set = array();
+while($row = $res->fetch_assoc()) {
+array_push($set,$row);
+}
+echo(json_encode($set));
+}
 
  
 }
