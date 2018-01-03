@@ -4,9 +4,9 @@ class Database{
  
     // specify your own database credentials
     public $host = "localhost";
-    public $db_name = "c43_not_ky";
-    public $username = "c43_not_ky";
-    public $password = "comp334!";
+    public $db_name = "api_db";
+    public $username = "root";
+    public $password = "pass1234";
     public $conn = NULL; 
     
     public function __construct(){
