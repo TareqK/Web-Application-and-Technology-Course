@@ -27,7 +27,7 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=7
+current_page=8
 FILE_NAME_0=104;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FProjects%2Fwebsite%2Fapi%2Fauth.php;0;4
 FILE_NAME_1=0;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FProjects%2Fwebsite%2Fapi%2Flist.php;0;4
 FILE_NAME_2=86;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FProjects%2Fwebsite%2Fapi%2Fuser.php;0;4
@@ -36,6 +36,7 @@ FILE_NAME_4=1566;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and
 FILE_NAME_5=1488;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FProjects%2Fwebsite%2Fapi%2Flocation.php;0;4
 FILE_NAME_6=1850;PHP;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FWeb-Application-and-Technology-Course%2FProjects%2Fwebsite%2Fapi%2Fpicnic.php;0;4
 FILE_NAME_7=0;Markdown;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FCode%2FCompiler-Construction-Course%2FNotes%2FsyntaxAnalysis.markdown;0;4
+FILE_NAME_8=528035;SQL;0;EUTF-8;1;1;0;%2Fhome%2Ftareq%2FDownloads%2Fapi_db.sql;0;4
 
 [VTE]
-last_dir=/home/tareq/Code/Graduation-Project
+last_dir=/home/tareq/Code/Compiler-Construction-Course
